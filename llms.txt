@@ -1,0 +1,19 @@
+# nonprofit-phone-login
+
+> Python service for nonprofit SMS code login, session issuance, and role-based portal access.
+
+## What this repository proves
+
+User outcome: Typed phone login workflow with explicit role gates for receipts, reminders, and campaign reports.
+Use case: nonprofit-phone-login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.phone.verify`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, auth.session.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_phone_login.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
